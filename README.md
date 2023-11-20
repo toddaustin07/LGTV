@@ -8,6 +8,9 @@ SmartThings Edge Driver for LG TVs.  Includes these features:
 * Display a message on TV screen
 * Automatically update SmartThings device with latest TV states at configured frequency (in seconds)
 
+## Caveats
+I have no idea how many LG TV models will work with this driver, but devices with firmware major version 4, product name "webOSTV 2.0" should be OK.
+
 ## Pre-requisites
 * LG TV
 * SmartThings Hub
