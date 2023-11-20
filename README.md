@@ -19,7 +19,11 @@ I have no idea how many LG TV models will work with this driver, but devices wit
 
 Enroll your hub via [this channel link](https://bestow-regional.api.smartthings.com/invite/Q1jP7BqnNNlL) and select **LG TV V1.0** to install to your hub.
 
+Turn on your LG TVs (this is needed for initial registration; see below)
+
 Once the driver is available on your hub, use the SmartThings app to do an **Add device / Scan for nearby devices**.  Any LG TVs found on your local network will be discovered and added as SmartThings devices in the room your hub device is located.
+
+When the new TV device(s) is/are created, a registration handshake must be completed with the discovered TVs.  You should see a message pop up on your TV(s) that you'll need to respond to.  Once this is completed, your SmartThings device should successfully initialize.
 
 ## Configuration
 There are 3 options that can be tailored in device Settings:
