@@ -1,0 +1,5 @@
+name: 'LG TV'
+packageKey: 'lgtv.v1'
+permissions:
+    lan: {}
+    discovery: {}

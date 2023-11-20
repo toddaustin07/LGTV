@@ -1,0 +1,118 @@
+{
+    "dashboard": {
+        "states": [],
+        "actions": []
+    },
+    "detailView": [
+        {
+            "label": "{{i18n.label}}",
+            "displayType": "list",
+            "list": {
+                "command": {
+                    "name": "setInputSource",
+                    "alternatives": [
+                        {
+                            "key": "HDMI_1",
+                            "value": "HDMI1",
+                            "type": "active"
+                        },
+                        {
+                            "key": "HDMI_2",
+                            "value": "HDMI2",
+                            "type": "active"
+                        },
+                        {
+                            "key": "HDMI_3",
+                            "value": "HDMI3",
+                            "type": "active"
+                        },
+                        {
+                            "key": "AV_1",
+                            "value": "AV",
+                            "type": "active"
+                        },
+                        {
+                            "key": "COMP_1",
+                            "value": "Component",
+                            "type": "active"
+                        }
+                    ],
+                    "argumentType": "string"
+                },
+                "state": {
+                    "value": "inputsource.value",
+                    "valueType": "string",
+                    "alternatives": [
+                        {
+                            "key": "HDMI_1",
+                            "value": "HDMI1",
+                            "type": "active"
+                        },
+                        {
+                            "key": "HDMI_2",
+                            "value": "HDMI2",
+                            "type": "active"
+                        },
+                        {
+                            "key": "HDMI_3",
+                            "value": "HDMI3",
+                            "type": "active"
+                        },
+                        {
+                            "key": "AV_1",
+                            "value": "AV",
+                            "type": "active"
+                        },
+                        {
+                            "key": "COMP_1",
+                            "value": "Component",
+                            "type": "active"
+                        }
+                    ]
+                }
+            }
+        }
+    ],
+    "automation": {
+        "conditions": [],
+        "actions": [
+            {
+                "label": "Partition Commands:",
+                "displayType": "list",
+                "list": {
+                    "alternatives": [
+                        {
+                            "key": "HDMI_1",
+                            "value": "HDMI1",
+                            "type": "active"
+                        },
+                        {
+                            "key": "HDMI_2",
+                            "value": "HDMI2",
+                            "type": "active"
+                        },
+                        {
+                            "key": "HDMI_3",
+                            "value": "HDMI3",
+                            "type": "active"
+                        },
+                        {
+                            "key": "AV_1",
+                            "value": "AV",
+                            "type": "active"
+                        },
+                        {
+                            "key": "COMP_1",
+                            "value": "Component",
+                            "type": "active"
+                        }
+                    ],
+                    "command": "setInputSource",
+                    "argumentType": "string"
+                }
+            }
+        ]
+    },
+    "id": "partyvoice23922.lgmediainputsource",
+    "version": 1
+}

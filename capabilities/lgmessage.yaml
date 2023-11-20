@@ -1,0 +1,25 @@
+id: partyvoice23922.lgmessage
+version: 1
+status: proposed
+name: lgmessage
+ephemeral: false
+attributes:
+  message:
+    schema:
+      type: object
+      properties:
+        value:
+          type: string
+      additionalProperties: false
+      required:
+        - value
+    setter: setMessage
+    enumCommands: []
+commands:
+  setMessage:
+    name: setMessage
+    arguments:
+      - name: message
+        optional: true
+        schema:
+          type: string

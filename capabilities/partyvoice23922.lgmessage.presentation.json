@@ -1,0 +1,33 @@
+{
+    "dashboard": {
+        "states": [],
+        "actions": []
+    },
+    "detailView": [
+        {
+            "label": "{{i18n.label}}",
+            "displayType": "textField",
+            "textField": {
+                "command": "setMessage",
+                "argumentType": "string",
+                "value": "message.value",
+                "valueType": "string"
+            }
+        }
+    ],
+    "automation": {
+        "conditions": [],
+        "actions": [
+            {
+                "label": "Message to Display",
+                "displayType": "textField",
+                "textField": {
+                    "command": "setMessage",
+                    "argumentType": "string"
+                }
+            }
+        ]
+    },
+    "id": "partyvoice23922.lgmessage",
+    "version": 1
+}
