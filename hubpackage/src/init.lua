@@ -313,8 +313,8 @@ function init_connection(device)
   local wssaddr = device:get_field('WSSaddr')
   log.debug ('Retrieved device address:', wssaddr)
 
-  --local uri = 'wss://' .. wssaddr
-  local uri = 'ws://' .. wssaddr
+  local uri = 'wss://' .. wssaddr
+  --local uri = 'ws://' .. wssaddr
   
   log.info (string.format('Initializing %s at %s', device.label, uri))
 
@@ -325,8 +325,8 @@ function init_connection(device)
     return
   end
   
-  --local ok, code, headers, sock = client:connect(uri,'echo', SSL_PARMS)
-  local ok, code, headers, sock = client:connect(uri,'echo')
+  local ok, code, headers, sock = client:connect(uri,'echo', SSL_PARMS)
+  --local ok, code, headers, sock = client:connect(uri,'echo')
   
   log.info (string.format('%s: WS Connect returned: ok=%s, code=%s, headers=%s', device.label, ok, code, headers))
   
@@ -756,7 +756,7 @@ thisDriver = Driver("thisDriver", {
   }
 })
 
-log.info ('LG TV Driver Started')
+log.info ('LG TV Driver V1.0 Started')
 
 -- start ping monitor
 thisDriver:call_on_schedule(120, pingmonitor)
