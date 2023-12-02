@@ -46,7 +46,7 @@ There are 3 options that can be tailored in device Settings:
 * Power switch: turn TV on or off
 * Volume: adjust volume level (slider) or enable/disable mute
 * Volume Up / Volume Down:  buttons to bump volume; work with external speakers; also see Configuration for setting up/down interval amount
-* Media Input Source:  select from HDMI1, HDMI2, HDMI3, AV, Component
+* Media Input Source:  select from HDMI1, HDMI2, HDMI3, HDMI4, Live TV, AV, Component
 * Active App: displays the current app
 * Change App:  select from the list of apps available on your TV
 * Current Channel: displays the current channel number - channel name
