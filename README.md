@@ -19,7 +19,7 @@ This driver relies on a set of undocumented commands to control the TV and retri
 
 ## Installation
 
-Enroll your hub via [this channel link](https://bestow-regional.api.smartthings.com/invite/Q1jP7BqnNNlL) and select **LG TV V1.0** to install to your hub.
+Enroll your hub via [this channel link](https://bestow-regional.api.smartthings.com/invite/Q1jP7BqnNNlL) and select **LG TV V1.1** to install to your hub.
 
 Turn on your LG TVs (this is needed for initial registration; see below)
 
@@ -41,15 +41,18 @@ There are 3 options that can be tailored in device Settings:
 
 ## Controls screen
 * Power switch: turn TV on or off
-* Volume: adjust volume level or enable/disable mute
+* Volume: adjust volume level (slider) or enable/disable mute
+* Volume Up / Volume Down:  buttons to bump volume; work with external speakers; also see device Settings options for up/down interval amount
 * Media Input Source:  select from HDMI1, HDMI2, HDMI3, AV, Component
-* Play a favorite:  select from the list of apps available on your TV
+* Active App: displays the current app
+* Change App:  select from the list of apps available on your TV
+* Current Channel: displays the current channel number - channel name
 * Channel: change channel up or down
 * Message: enter text you want displayed on a TOAST message on the TV screen
 * Status: shows the current connection status with the TV, or error messages of applicable
 
 ## Routines
-* On/off, volume, mute are available for 'If' conditions
+* On/off, volume level, mute, media input source, current app, current channel number are available for 'If' conditions
 * All controls but channel up/down are available for Routine 'Then' actions (this appears to be a SmartThings capability issue at the moment)
 
 ## Attribution
