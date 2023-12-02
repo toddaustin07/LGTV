@@ -32,6 +32,9 @@ There are 3 options that can be tailored in device Settings:
 * Refresh Frequency
   
   This determines how often the driver will poll your TV in order to reflect any state updates
+* Volume Change Interval
+
+Enter a numeric value from 1 to 20 to set how many times to 'bump' the volume each time the Volume Up or Volume Down button is pressed.
 * WOL MAC Address
   
   This must be configured with your TV's MAC address if you want to be able to turn it on
