@@ -34,7 +34,7 @@ There are 3 options that can be tailored in device Settings:
   This determines how often the driver will poll your TV in order to reflect any state updates
 * Volume Change Interval
 
-Enter a numeric value from 1 to 20 to set how many times to 'bump' the volume each time the Volume Up or Volume Down button is pressed.
+  Enter a numeric value from 1 to 20 to set how many times to 'bump' the volume each time the Volume Up or Volume Down button is pressed.
 * WOL MAC Address
   
   This must be configured with your TV's MAC address if you want to be able to turn it on
@@ -45,7 +45,7 @@ Enter a numeric value from 1 to 20 to set how many times to 'bump' the volume ea
 ## Controls screen
 * Power switch: turn TV on or off
 * Volume: adjust volume level (slider) or enable/disable mute
-* Volume Up / Volume Down:  buttons to bump volume; work with external speakers; also see device Settings options for up/down interval amount
+* Volume Up / Volume Down:  buttons to bump volume; work with external speakers; also see Configuration for setting up/down interval amount
 * Media Input Source:  select from HDMI1, HDMI2, HDMI3, AV, Component
 * Active App: displays the current app
 * Change App:  select from the list of apps available on your TV
