@@ -1,0 +1,14 @@
+{
+    "id": "partyvoice23922.lgvolumeup",
+    "version": 1,
+    "status": "proposed",
+    "name": "lgvolumeup",
+    "ephemeral": false,
+    "attributes": {},
+    "commands": {
+        "push": {
+            "name": "push",
+            "arguments": []
+        }
+    }
+}

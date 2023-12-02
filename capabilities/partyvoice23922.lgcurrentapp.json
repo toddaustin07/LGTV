@@ -1,0 +1,25 @@
+{
+    "id": "partyvoice23922.lgcurrentapp",
+    "version": 1,
+    "status": "proposed",
+    "name": "lgcurrentapp",
+    "ephemeral": false,
+    "attributes": {
+        "currentApp": {
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "value": {
+                        "type": "string"
+                    }
+                },
+                "additionalProperties": false,
+                "required": [
+                    "value"
+                ]
+            },
+            "enumCommands": []
+        }
+    },
+    "commands": {}
+}

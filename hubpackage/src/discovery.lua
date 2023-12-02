@@ -95,27 +95,19 @@ local function parse_response(val)
       lginfo.port = tonumber(lginfo.port)
       if headers["dlnadevicename.lge.com"] then
         local lgheader = decode(headers["dlnadevicename.lge.com"])
-        lginfo.lgid = lgheader
-        lgtv, lginfo.model= lgheader:match('%[LG%] ([%a% ]+) (%w+)$')
+        lginfo.name = lgheader
+        lgtv, lginfo.model = lgheader:match('%[LG%] ([%a% ]+) (%w+)$')
         if lgtv == 'webOS TV' then
-          return lginfo
+          lginfo.name = "LG TV " .. lginfo.model
         else
-          log.debug(string.format('[disco] Unexpected LG header from %s: %s', headers.location, lgheader))
+          lginfo.model = "LGE WebOS TV"
         end
+        return lginfo
       end
     end
   end
   log.debug(string.format('[disco] Responding device at %s is not an LG TV: USN=%s', headers.location, headers.usn))
-  -- DEBUG --
-  ---[[
-  return { usn= 'uuid:204e6a2f-3ebd-fd61-9930-45cbd63980ba::urn:schemas-upnp-org:device:MediaRenderer:1',
-           uuid= '204e6a2f-3ebd-fd61-9930-45cbd63980ba',
-           ip= '192.168.1.140',
-           port = 6666,
-           lgid = '[LG] webOS TV UN74006LB',
-           model = '20UN74006LB'
-          }
-  --]]
+  
 end
 
 function Discovery.run_discovery_task()
@@ -197,7 +189,7 @@ function Discovery.run_discovery_task()
           
           if lgmeta then
           
-            log.trace("[disco] found device:", lgmeta.ip, lgmeta.port, lgmeta.lgid)
+            log.trace("[disco] found device:", lgmeta.ip, lgmeta.port, lgmeta.name)
             infos_found[lgmeta.uuid] = lgmeta
             number_found = number_found + 1
             for _, search_id in ipairs(search_ids) do
@@ -232,6 +224,18 @@ end
 --This function should only be sending on tx ctrl channel
 -- to discovery task to add a deviceID to the disco search
 function Discovery.find(deviceid, callback)
+
+  -- DEBUG --
+  --[[
+  callback( { usn= 'uuid:204e6a2f-3ebd-fd61-9930-45cbd63980ba::urn:schemas-upnp-org:device:MediaRenderer:1',
+           uuid= '204e6a2f-3ebd-fd61-9930-45cbd63980ba',
+           ip= '192.168.1.140',
+           port = 6666,
+           name = 'Living Room TV',
+           model = '20UN74006LB'
+          })
+  --]]
+
   if Discovery._ctrl_tx == nil then
     log.trace("[disco] starting discovery cosock task")
     Discovery.run_discovery_task()

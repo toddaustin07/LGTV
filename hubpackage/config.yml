@@ -1,4 +1,4 @@
-name: 'LG TV V1.0'
+name: 'LG TV V1.1'
 packageKey: 'lgtv.v1'
 permissions:
     lan: {}

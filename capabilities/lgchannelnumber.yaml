@@ -1,0 +1,17 @@
+id: partyvoice23922.lgchannelnumber
+version: 1
+status: proposed
+name: lgchannelnumber
+ephemeral: false
+attributes:
+  channelNumber:
+    schema:
+      type: object
+      properties:
+        value:
+          type: integer
+      additionalProperties: false
+      required:
+        - value
+    enumCommands: []
+commands: {}

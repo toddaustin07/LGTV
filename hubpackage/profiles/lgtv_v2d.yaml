@@ -1,0 +1,77 @@
+name: lgtv.v2d
+components:
+  - id: main
+    capabilities:
+      - id: switch
+        version: 1
+      - id: audioVolume
+        version: 1
+      - id: audioMute
+        version: 1
+      - id: partyvoice23922.lgvolumeup
+        version: 1
+      - id: partyvoice23922.lgvolumedown
+        version: 1
+      - id: partyvoice23922.lgmediainputsource
+        version: 1
+      - id: partyvoice23922.lgcurrentapp
+        version: 1
+      - id: mediaPresets
+        version: 1
+      - id: partyvoice23922.lgcurrentchannel
+        version: 1
+      - id: partyvoice23922.lgchannelnumber
+        version: 1
+      - id: tvChannel
+        version: 1
+      - id: partyvoice23922.lgmessage
+        version: 1
+      - id: partyvoice23922.status
+        version: 1
+      - id: refresh
+        version: 1
+    categories:
+      - name: Television
+metadata:
+  mnmn: SmartThingsCommunity
+  vid: 9f26e1fc-b824-39e0-a88e-b9d3bf5152c0
+  ocfDeviceType: oic.d.tv
+preferences:
+  - title: "Refresh Frequency"
+    name: freq
+    description: "Refresh data every n seconds"
+    required: true
+    preferenceType: integer
+    definition:
+      minimum: 10
+      maximum: 86400
+      default: 60
+  - title: "Volume Change Interval"
+    name: volbump
+    description: "Volume Up/Down Change Amount"
+    required: true
+    preferenceType: integer
+    definition:
+      minimum: 1
+      maximum: 20
+      default: 5
+  - title: "WOL MAC Address"
+    name: macaddr
+    description: "Device MAC Address"
+    required: false
+    preferenceType: string
+    definition:
+      stringType: text
+      minLength: 17
+      maxLength: 17
+      default: "xx:xx:xx:xx:xx:xx"
+  - title: "WOL Broadcast Address"
+    name: bcastaddr
+    description: "IP:port Address"
+    required: false
+    preferenceType: string
+    definition:
+      stringType: text
+      minLength: 11
+      maxLength: 17
+      default: "255.255.255.255:7"

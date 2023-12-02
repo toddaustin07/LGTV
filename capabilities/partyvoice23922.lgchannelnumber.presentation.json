@@ -1,0 +1,34 @@
+{
+    "dashboard": {
+        "states": [
+            {
+                "label": "{{channelNumber.value}}"
+            }
+        ],
+        "actions": []
+    },
+    "detailView": [
+        {
+            "label": "{{i18n.label}}",
+            "displayType": "state",
+            "state": {
+                "label": "{{channelNumber.value}}"
+            }
+        }
+    ],
+    "automation": {
+        "conditions": [
+            {
+                "label": "Channel",
+                "displayType": "numberField",
+                "numberField": {
+                    "value": "channelNumber.value",
+                    "valueType": "integer"
+                }
+            }
+        ],
+        "actions": []
+    },
+    "id": "partyvoice23922.lgchannelnumber",
+    "version": 1
+}

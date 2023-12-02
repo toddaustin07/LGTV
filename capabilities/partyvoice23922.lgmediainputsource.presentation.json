@@ -13,17 +13,22 @@
                     "alternatives": [
                         {
                             "key": "HDMI_1",
-                            "value": "HDMI1",
+                            "value": "HDMI 1",
                             "type": "active"
                         },
                         {
                             "key": "HDMI_2",
-                            "value": "HDMI2",
+                            "value": "HDMI 2",
                             "type": "active"
                         },
                         {
                             "key": "HDMI_3",
-                            "value": "HDMI3",
+                            "value": "HDMI 3",
+                            "type": "active"
+                        },
+                        {
+                            "key": "HDMI_4",
+                            "value": "HDMI 4",
                             "type": "active"
                         },
                         {
@@ -34,6 +39,11 @@
                         {
                             "key": "COMP_1",
                             "value": "Component",
+                            "type": "active"
+                        },
+                        {
+                            "key": "Live_TV",
+                            "value": "Live TV",
                             "type": "active"
                         }
                     ],
@@ -45,17 +55,22 @@
                     "alternatives": [
                         {
                             "key": "HDMI_1",
-                            "value": "HDMI1",
+                            "value": "HDMI 1",
                             "type": "active"
                         },
                         {
                             "key": "HDMI_2",
-                            "value": "HDMI2",
+                            "value": "HDMI 2",
                             "type": "active"
                         },
                         {
                             "key": "HDMI_3",
-                            "value": "HDMI3",
+                            "value": "HDMI 3",
+                            "type": "active"
+                        },
+                        {
+                            "key": "HDMI_4",
+                            "value": "HDMI 4",
                             "type": "active"
                         },
                         {
@@ -66,6 +81,11 @@
                         {
                             "key": "COMP_1",
                             "value": "Component",
+                            "type": "active"
+                        },
+                        {
+                            "key": "Live_TV",
+                            "value": "Live TV",
                             "type": "active"
                         }
                     ]
@@ -74,26 +94,30 @@
         }
     ],
     "automation": {
-        "conditions": [],
-        "actions": [
+        "conditions": [
             {
-                "label": "Partition Commands:",
+                "label": "Input Source",
                 "displayType": "list",
                 "list": {
                     "alternatives": [
                         {
                             "key": "HDMI_1",
-                            "value": "HDMI1",
+                            "value": "HDMI 1",
                             "type": "active"
                         },
                         {
                             "key": "HDMI_2",
-                            "value": "HDMI2",
+                            "value": "HDMI 2",
                             "type": "active"
                         },
                         {
                             "key": "HDMI_3",
-                            "value": "HDMI3",
+                            "value": "HDMI 3",
+                            "type": "active"
+                        },
+                        {
+                            "key": "HDMI_4",
+                            "value": "HDMI 4",
                             "type": "active"
                         },
                         {
@@ -104,6 +128,58 @@
                         {
                             "key": "COMP_1",
                             "value": "Component",
+                            "type": "active"
+                        },
+                        {
+                            "key": "Live_TV",
+                            "value": "Live TV",
+                            "type": "active"
+                        }
+                    ],
+                    "value": "inputsource.value",
+                    "valueType": "string"
+                }
+            }
+        ],
+        "actions": [
+            {
+                "label": "Input Source",
+                "displayType": "list",
+                "list": {
+                    "alternatives": [
+                        {
+                            "key": "HDMI_1",
+                            "value": "HDMI 1",
+                            "type": "active"
+                        },
+                        {
+                            "key": "HDMI_2",
+                            "value": "HDMI 2",
+                            "type": "active"
+                        },
+                        {
+                            "key": "HDMI_3",
+                            "value": "HDMI 3",
+                            "type": "active"
+                        },
+                        {
+                            "key": "HDMI_4",
+                            "value": "HDMI 4",
+                            "type": "active"
+                        },
+                        {
+                            "key": "AV_1",
+                            "value": "AV",
+                            "type": "active"
+                        },
+                        {
+                            "key": "COMP_1",
+                            "value": "Component",
+                            "type": "active"
+                        },
+                        {
+                            "key": "Live_TV",
+                            "value": "Live TV",
                             "type": "active"
                         }
                     ],
