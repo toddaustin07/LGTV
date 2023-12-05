@@ -28,7 +28,7 @@ Once the driver is available on your hub, use the SmartThings app to do an **Add
 When the new TV device(s) is/are created, a one-time registration handshake must be completed with the discovered TVs.  You should see a message pop up on your TV(s) that you'll need to respond to.  Once this is completed, your SmartThings device should successfully initialize.
 
 ## Configuration
-There are 3 options that can be tailored in device Settings:
+There are 4 options that can be tailored in device Settings:
 * Refresh Frequency
   
   This determines how often the driver will poll your TV in order to reflect any state updates
