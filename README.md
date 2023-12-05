@@ -9,6 +9,9 @@ SmartThings Edge Driver for LG TVs.  Includes these features:
 * Automatically update SmartThings device with latest TV states at configured frequency (in seconds)
 
 ## Caveats
+
+The LG TV does not send notifications out when something has changed via the TV remote (app, channel, volume, etc.).  Therefore this driver must poll the TV for updates.  The polling frequency is configurable.
+
 I have no idea how many LG TV models will work with this driver, but devices with firmware major version 4, product name "webOSTV 2.0" should be OK.
 
 This driver relies on a set of undocumented commands to control the TV and retrieve state updates.  This API was meant to be used internally by LG and therefore could stop working at their whim.
